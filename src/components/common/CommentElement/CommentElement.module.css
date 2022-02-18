@@ -1,0 +1,42 @@
+.commentElementWrapper {
+    display: flex;
+    margin: 20px;
+}
+
+.commentElementWrapper > div > div > p {
+    display: inline-block;
+    margin: 0 10% 0 0;
+}
+
+@media only screen and (max-height: 110vw) and (max-width: 1300px) {
+    .commentElementWrapper {
+        width: 50vw;
+        font-size: 1.2vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1300px) and (max-width: 1600px){
+    .commentElementWrapper {
+        width: 43vw;
+        font-size: 1vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1600px) {
+    .commentElementWrapper {
+        width: 35vw;
+        font-size: .8vw;
+    }
+}
+
+@media only screen and (min-height: 110vw) {
+    .commentElementWrapper {
+        width: 70vw;
+        font-size: 3vw;
+    }
+
+    .commentElementWrapper > div > div > p {
+        display: block;
+        margin: 0 10% 0 0;
+    }
+}

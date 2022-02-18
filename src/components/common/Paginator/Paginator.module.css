@@ -1,0 +1,53 @@
+.paginatorWrapper {
+    display: flex;
+    user-select: none;
+    margin: 20px;
+}
+
+.paginatorNumberElement {
+    transition: background-color ease .3s 0s;
+}
+
+.paginatorNumberElement:hover {
+    background-color: rgba(42, 46, 46, 0.25);
+}
+
+.currentElement {
+    font-weight: bold;
+}
+
+@media only screen and (max-height: 110vw) and (max-width: 1600px){
+    .paginatorElement {
+        font-size: 1.2vw;
+        margin: .4vw;
+        padding: .2vw;
+        border-radius: .2vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1300px) and (max-width: 1600px){
+    .paginatorElement {
+        font-size: 1vw;
+        margin: .35vw;
+        padding: .15vw;
+        border-radius: .15vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1600px){
+    .paginatorElement {
+        font-size: .8vw;
+        margin: .27vw;
+        padding: .13vw;
+        border-radius: .13vw;
+    }
+}
+
+@media only screen and (min-height: 110vw){
+    .paginatorElement {
+        font-size: 3vw;
+        margin: 1vw;
+        padding: .5vw;
+        border-radius: .5vw;
+    }
+}

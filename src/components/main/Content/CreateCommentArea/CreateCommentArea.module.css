@@ -1,0 +1,71 @@
+.createCommentWrapper {
+    display: flex;
+    margin: 20px;
+}
+
+.buttonsBlock {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.commentInput {
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    outline: none;
+    border: #2A2E2E solid 0;
+    border-bottom: #2A2E2E solid 1px;
+    transition: border-bottom ease 0s 0s;
+}
+
+.commentInput:focus {
+    border-bottom: black solid 1px;
+}
+
+@media only screen and (max-height: 110vw) and (max-width: 1300px) {
+    .createCommentWrapper {
+        width: 50vw;
+        height: 5vw;
+    }
+
+    .commentInput {
+        font-size: 1.2vw;
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1300px) and (max-width: 1600px){
+    .createCommentWrapper {
+        width: 43vw;
+        height: 4.3vw;
+    }
+
+    .commentInput {
+        font-size: 1vw;
+        width: 38.7vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1600px) {
+    .createCommentWrapper {
+        width: 35vw;
+        height: 3.5vw;
+    }
+
+    .commentInput {
+        font-size: .8vw;
+        width: 31.5vw;
+    }
+}
+
+@media only screen and (min-height: 110vw) {
+    .createCommentWrapper {
+        width: 70vw;
+        height: 7vw;
+    }
+
+    .commentInput {
+        font-size: 3vw;
+        width: 63vw;
+    }
+}

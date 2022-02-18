@@ -1,0 +1,27 @@
+@media only screen and (max-height: 110vw) and (max-width: 1600px){
+    .preloader {
+        height: 10vw;
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1300px) and (max-width: 1600px){
+    .preloader {
+        height: 7.5vw;
+        width: 7.5vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1600px){
+    .preloader {
+        height: 6vw;
+        width: 6vw;
+    }
+}
+
+@media only screen and (min-height: 110vw){
+    .preloader {
+        height: 20vw;
+        width: 20vw;
+    }
+}
