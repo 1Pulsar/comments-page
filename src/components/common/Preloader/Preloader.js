@@ -4,6 +4,6 @@ import style from "./Preloader.module.css";
 
 export const Preloader = (props) => {
 
-    return <img className={style.preloader} src={standardPreloader} alt='Preloader' />
+    return <img className={style.preloader} src={standardPreloader} alt='Preloader'/>;
 
-}
+};

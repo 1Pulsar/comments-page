@@ -2,20 +2,19 @@ import React from "react";
 import style from "./CommentElement.module.css";
 import {UserAvatar} from "../UserAvatar/UserAvatar";
 
-export const CommentElement = (props) => {
+export const CommentElement = ({name, text, deltaTimeString}) => {
+    const checkName = name.length > 20 ? name.slice(0, 20) + "..." : name;
+
     return (
         <div className={style.commentElementWrapper}>
             <UserAvatar/>
             <div>
                 <div>
-                    <p>Staraya Chimchima</p>
-                    <p>15 hours ago</p>
+                    <p>{checkName}</p>
+                    <p>{deltaTimeString}</p>
                 </div>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                    создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                    Lorem Ipsum не только успешно пережил без</p>
+                <p>{text}</p>
             </div>
         </div>
-    )
-}
+    );
+};

@@ -1,0 +1,48 @@
+.modalWindowChildrenWrapper {
+    padding: 4%;
+}
+
+.nameInput {
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    outline: none;
+    font-size: inherit;
+    width: 75%;
+    border: #2A2E2E solid 0;
+    border-bottom: #2A2E2E solid 1px;
+    transition: border-bottom ease 0s 0s;
+}
+
+.nameInput:focus {
+    border-bottom: black solid 1px;
+}
+
+@media only screen and (max-height: 110vw) and (max-width: 1300px) {
+    .modalWindowChildrenWrapper {
+        width: 25vw;
+        height: 12.5vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1300px) and (max-width: 1600px){
+    .modalWindowChildrenWrapper {
+        width: 21.5vw;
+        height: 10.75vw;
+    }
+}
+
+@media only screen and (max-height: 110vw) and (min-width: 1600px) {
+    .modalWindowChildrenWrapper {
+        width: 17.5vw;
+        height: 8.75vw;
+        font-size: .8vw;
+    }
+}
+
+@media only screen and (min-height: 110vw) {
+    .modalWindowChildrenWrapper {
+        width: 35vw;
+        height: 17.5vw;
+    }
+}
